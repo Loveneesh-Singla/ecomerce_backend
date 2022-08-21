@@ -7,7 +7,6 @@ const User=require('../model/userModel')
 
 exports.isAuthenticatedUser = catchAsyncErrors(async(req,res,next)=>{
 
-
     const {token}=req.cookies;
 
     if(!token){
